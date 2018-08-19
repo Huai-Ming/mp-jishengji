@@ -133,7 +133,15 @@
           })
           return false
         }
+        else{
+           wx.showToast({
+             title:  this.bill.typeId === '1' ? '又花了一笔哦' : '见回头钱了',
+            icon: 'success',
+            duration: 2000
+        })
 
+        }
+        
         // 发送Post请求记录
       },
 
